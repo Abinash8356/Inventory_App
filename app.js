@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 const catalogRouter = require('./routes/catalog');
 
 const mongoDB =
-  "mongodb+srv://abdogado:gedox23101997@cluster0.hexoi.mongodb.net/grocery-app?retryWrites=true&w=majority";
+  "mongodb://localhost:27017";
 
 mongoose
   .connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
